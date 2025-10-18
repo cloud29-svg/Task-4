@@ -17,18 +17,7 @@ header {
   align-items: center;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: #fff;
-}
 
-.logo span {
-  color: gold;
-}
-
-/* Nav Menu */
 .nav-menu {
   list-style: none;
   display: flex;
@@ -43,10 +32,10 @@ header {
 }
 
 .nav-menu li a:hover {
-  color: gold;
+  color:rgba(206, 177, 14, 0.781);
 }
 
-/* Hamburger (3 lines) */
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -63,12 +52,12 @@ header {
   transition: all 0.3s ease;
 }
 
-/* Hidden Checkbox */
+
 #menu-toggle {
   display: none;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
     .header-container {
   padding: 1rem;
@@ -100,12 +89,12 @@ header {
     display: flex;
   }
 
-  /* Toggle open state */
+  
   #menu-toggle:checked ~ .nav-menu {
     max-height: 500px;
   }
 
-  /* Animate hamburger into X */
+  
   #menu-toggle:checked + .hamburger span:nth-child(1) {
     transform: rotate(50deg) translateY(14px);
   }
